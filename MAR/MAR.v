@@ -1,13 +1,13 @@
 module MAR #(
-    parameter AddressWidth = 4
+    parameter PC_Width = 4
 ) 
 (
     input wire i_clk,
     input wire i_lm,
 
-    input wire [AddressWidth-1:0] i_addr,
+    input wire [PC_Width-1:0] i_addr,
     
-    output reg [AddressWidth-1:0] o_addr
+    output reg [PC_Width-1:0] o_addr
 );
 
     always @(posedge i_clk) begin

@@ -20,7 +20,7 @@ module PROM #(
         if (i_er) begin
             o_word = Mem[i_mar];
         end else begin
-            o_word = {WordWidth{1'bz}};
+            o_word = {WordWidth{1'dz}};
         end
     end
 endmodule
